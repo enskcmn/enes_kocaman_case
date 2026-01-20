@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI Automation Suite">
+    <parameter name="browser" value="chrome"/>
+    <listeners>
+        <listener class-name="listeners.ScreenshotListener"/>
+    </listeners>
+    <test name="Quality Assurance Tests">
+        <classes>
+            <class name="tests.HomeTest"></class>
+            <class name="tests.QualityAssuranceTest"></class>
+            <class name="tests.OpenPositionsTest"></class>
+        </classes>
+    </test>
+</suite>
